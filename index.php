@@ -8,11 +8,16 @@
 </head>
 
 <body>
+<div class ="website-logo">
+
+</div>   
+
 <div class ="content-container">
 <h1>Operatie Essen<h1>
     <div class= "menu-buttons">
-        <input class="w3-button w3-black" type="button" value="Login">
-        <input class="w3-button w3-black" type="button" value="Register">
+        <input class="login-button" type="button" value="Login">
+        <input class="reigster-button" type="button" value="Register">
+        <a href="./Home/test.php"></a>
     </div>
 </div>
 </body>
