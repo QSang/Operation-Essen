@@ -5,15 +5,15 @@ $chosenMenu = $_POST['chosenMenu'];
 
 switch ($chosenMenu) {
   case 'kip':
-    include 'Kipmenu.php';
+    include 'kipmenu.php';
   break;
 
   case 'vlees':
-    include 'Vleesmenu.php';
+    include 'vleesmenu.php';
   break;
-  
+
   case 'vis':
-    include 'Vismenu.php';
+    include 'vismenu.php';
      break;
 
    default:

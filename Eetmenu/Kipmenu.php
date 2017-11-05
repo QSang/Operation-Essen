@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Kip</title>
-<link rel="stylesheet" type="text/css" href="Eetmenu.css">
+<title>Komessen</title>
+<link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body>
 
-<h1>Kip</h1>
-<h2>Pick where you want to eat</h2>
+<h1>Komessen</h1>
+<h2>Choose your chicken dish</h2>
 
 <?php
 $assortment = array();
-$assortment['kip'] = array('name' => "Kip", 'value' => 'kip', 'image' => "kip-logo.jpg" , 'description' => "pok pok <br/> test <br> test", 'price' => 14.99, );
-$assortment['vlees'] = array('name' => "Vlees", 'value' => 'vlees', 'image' => "vlees-logo.png" , 'description' => "pok pok <br/> test <br> test", 'price' => 14.99, );
-$assortment['vis'] = array('name' => "Vis", 'value' => 'vis', 'image' => "vis-logo.png" , 'description' => "pok pok <br/> test <br> test", 'price' => 14.99, );
-
+$assortment['kippensoep'] = array('name' => "kippensoep", 'description' => "<h5>kippesoep met ui</h5>", 'price' => 14.99);
+$assortment['kipsate'] = array('name' => "kipsate", 'description' => "<h5>kipsate met rijst</h5>", 'price' => 14.99);
+$assortment['kipkerrie'] = array('name' => "kerriekiprijst", 'description' => "<h5>kip kerrie met rijst</h5>", 'price' => 14.99);
+$assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' => "<h5>kippenvleugels met rijst</h5>", 'price' => 14.99);
 ?>
 <div class= "content-container">
-    <div id = "filter-list">
-        <div id= "content"> 
-            <table border="2px" width="50%" align="center">
-                <?php
-                foreach ($assortment as $key => $value) {
-                    ?>
-                    <tr>
-                        <td>
-                            <img src="<?php echo $value['image']; ?>" width="100px" height="90px" align="center">
-                        </td>
-                        <td>
-                            <?php echo $value['description']; ?>
-                        </td>
-                        <td>
-                            <?php echo $value['price']; ?>
-                        </td>
-                    </tr>
-                    <?php
-                }
+    <div id= "content"> 
+        <table border="2px" width="50%" align="center">
+            <?php
+            foreach ($assortment as $key => $value) {
                 ?>
-            </table>
-        </div>
-    </div>
-</div>
+                <tr>
+                    <td>
+                        <?php echo $value['name']."<br/>". $value['description'] ?>
+                    </td>
+                <td>
+                    <form action="menu.php" method="POST">
+                        <input type = "hidden" name="chosenMenu" value="<?php echo $value['value']; ?>">
+                        <input type = "submit" value="<?php echo $value['price']; ?>">
+                    </form>
+                </td>
+                </tr>
 
+                <?php
+            }
+            ?>
+        </table>
 </body>
 </html>
 <html>
