@@ -5,7 +5,7 @@
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 </head>
-<link href="index.css" rel="stylesheet" type="text/css"/>
+<link href="theme.css" rel="stylesheet" type="text/css"/>
 
 
 
@@ -15,15 +15,15 @@
         <a href="keuzemenu.php">Bestellen</a>
         <a href="faq.php">FAQ</a>
         <a href="contact.php">Contact</a>
-        <a href="login.php">Inloggen</a>
+        <a href="login2.php">Inloggen</a>
 </div>
-<span class="first_title"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
+<span class="first_tittle"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
 
 <div id="left_sidebar">
 <div id="menu">
     <h3>Menu</h3>
     <a href="index.php">Home</a>
-        <a href="#">Bestellen</a>
+        <a href="keuzemenu.php">Bestellen</a>
         <a href="faq.php">FAQ</a>
         <a href="contact.php">Contact</a>
         <a href="login2.php">Inloggen</a>
@@ -45,6 +45,8 @@
     <a href="#">Home</a> &qt;
     <a href="#">Inloggen</a>
 </div>
+<section id = "blankDiv"></section>
+
     <section id = "inlogGegevens">
         <b> already have an account?<br>Log in:</b>
         <?php//inlog gegevens invoeren?>
@@ -64,7 +66,7 @@
                             <tr>
             </form>
             <?php//wachwoord vergeten:?>
-            <tr><td></td><td><a href="https://www.youtube.com/watch?v=An4uDegHB8s">I forgot my password!</a></td></tr>
+            <tr><td></td><td><a href="forgottenPassword.php">Wachtwoord vergeten?</a></td></tr>
             </table>
     </section>
 

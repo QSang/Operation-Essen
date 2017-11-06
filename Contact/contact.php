@@ -3,27 +3,27 @@
 
 
 <title> Kom Essen </title>
-<link href="../index.css" rel="stylesheet" type="text/css"/>
+<link href="theme.css" rel="stylesheet" type="text/css"/>
 
 
 <div id="header"> 
     <div id="topmenu">
         <a href="index.php">Home</a>
-        <a href="./Keuzemenu/keuzemenu.php">Bestellen</a>
-        <a href="./FAQ/faq.php">FAQ</a>
-        <a href="./Contact/contact.php">Contact</a>
-        <a href="./Login/login.php">Inloggen</a>
-    </div>
-<span class="first title"><h3>Kom Essen!</h3></span>
+        <a href="#">Bestellen</a>
+        <a href="faq.php">FAQ</a>
+        <a href="contact.php">Contact</a>
+        <a href="login2.php">Inloggen</a>
+</div>
+<span class="first tittle"><h3>Kom Essen!</h3></span>
 
 <div id="left_sidebar">
 <div id="menu">
     <h3>Menu</h3>
     <a href="index.php">Home</a>
-        <a href="#">Bestellen</a>
+        <a href="keuzemenu.php">Bestellen</a>
         <a href="faq.php">FAQ</a>
         <a href="contact.php">Contact</a>
-        <a href="#">Inloggen</a>
+        <a href="login2.php">Inloggen</a>
 </div>
 
 <h3>Nieuws</h3>
@@ -44,7 +44,10 @@
 <h2> Contact </h2>
 <p> Telefoonnummer: 0643520531</p>
 
+
+
 <?php
+
 $onderwerpErr = $naamErr = $telefoonErr = $emailErr = $textareaErr= "";
 $onderwerp = $naam = $telefoon = $email = $textarea= "";
 
@@ -83,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $textareaErr = "Tekst is verplicht";
 }
     else{
-        echo "Bedankt voor het invullen, wij zullen zo spoedig mogelijk reageren";
+        echo "<p>Bedankt voor het invullen, wij zullen zo spoedig mogelijk reageren</p>";
 }
 }
 ?>
