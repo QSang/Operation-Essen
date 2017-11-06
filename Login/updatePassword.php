@@ -5,28 +5,28 @@
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 
-<link href="theme.css" rel="stylesheet" type="text/css"/>
+<link href="../index.css" rel="stylesheet" type="text/css"/>
 
 
 
 <div id="header">
     <div id="topmenu">
-        <a href="index.php">Home</a>
-        <a href="keuzemenu.php">Bestellen</a>
-        <a href="faq.php">FAQ</a>
-        <a href="contact.php">Contact</a>
-        <a href="Login2.php">Inloggen</a>
+    <a href="../index.php">Home</a>
+    <a href="./Keuzemenu/keuzemenu.php">Bestellen</a>
+    <a href="./FAQ/faq.php">FAQ</a>
+    <a href="./Contact/contact.php">Contact</a>
+    <a href="./Login/login.php">Inloggen</a>
 </div>
 <span class="first_tittle"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
 
 <div id="left_sidebar">
 <div id="menu">
     <h3>Menu</h3>
-    <a href="index.php">Home</a>
-        <a href="keuzemenu.php">Bestellen</a>
-        <a href="faq.php">FAQ</a>
-        <a href="contact.php">Contact</a>
-        <a href="Login2.php">Inloggen</a>
+    <a href="../index.php">Home</a>
+    <a href="./Keuzemenu/keuzemenu.php">Bestellen</a>
+    <a href="./FAQ/faq.php">FAQ</a>
+    <a href="./Contact/contact.php">Contact</a>
+    <a href="./Login/login.php">Inloggen</a>
 </div>
 
 <h3>Nieuws</h3>
