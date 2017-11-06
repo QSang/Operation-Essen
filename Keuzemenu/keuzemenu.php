@@ -1,14 +1,43 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Komessen</title>
-<link rel="stylesheet" type="text/css" href="keuzemenu.css">
-</head>
 <body>
 
-<h1>Komessen</h1>
-<h2>Pick where you want to eat</h2>
+<title>Kom Essen  </title>
+<title> Lekker en snel geleverd </title>
 
+<link href="index.css" rel="stylesheet" type="text/css"/>
+
+<div id="header"> 
+    <div id="topmenu">
+        <a href="index.php">Home</a>
+        <a href="./Eetmenu/keuzemenu.php">Bestellen</a>
+        <a href="faq.php">FAQ</a>
+        <a href="contact.php">Contact</a>
+        <a href="login.php">Inloggen</a>
+</div>
+
+<span class="first_title"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
+
+<div id="left_sidebar">
+    <div id="menu">
+        <h3>Menu</h3>
+        <a href="#">Home</a>
+        <a href="index.php">Bestellen</a>
+        <a href="faq.php">FAQ</a>
+        <a href="contact.php">Contact</a>
+        <a href="#">Inloggen</a>
+</div>
+
+<h3>Nieuws</h3>
+<p>Kom Essen is dit jaar genomineerd voor de beste website voor het bestellen van eten! Stemmen dus!</p>
+<h3>Tijdelijke actie</h3>
+<p>Bestel eten voor 1 december 2017 en verdien een korting van 20% op het totale betaalbedrag</p>
+<h3>Gratis eten?</h3>
+<p>Als je het hele jaar door van deze website gebruikt maakt, verdien je een gratis maaltijd naar keuze!</p>
+</div>
+
+
+
+<div id="content">
 <?php
 $assortment = array();
 $assortment['kip'] = array('name' => "Kip", 'value' => 'kip', 'image' => "kip-logo.jpg" , 'description' => "pok pok <br/> chicken", 'price' => "25 min delivery <br/> 4.95 delivery costs <br/> free delivery from 15.00 <br/> 4/5 rating in 214 reviews");
@@ -48,7 +77,21 @@ $assortment['vis'] = array('name' => "Vis", 'value' => 'vis', 'image' => "vis-lo
     </div>
 </div>
 
+<div id="right_sidebar">
+    <h3> Openingstijden </h3>
+    <p><b>Maandag:</b>15:00 - 00:00 </p>
+    <p><b>Dinsdag:</b>15:00 - 00:00 </p>
+    <p><b>Woensdag:</b>15:00 - 00:00 </p>
+    <p><b>Donderdag:</b>15:00 - 00:00 </p>
+    <p><b>Vrijdag:</b>15:00 - 02:00 </p>
+    <p><b>Zaterdag:</b>15:00 - 02:00 </p>
+    <p><b>Zondag:</b>15:00 - 02:00 </p>
+</div>
+
+
+<div id="footer"> 	
+<p>Copyright &copy; <?php echo date("Y"); ?> Kom Essen</p> 
+</div>
+
 </body>
 </html>
-<html>
-<body>
