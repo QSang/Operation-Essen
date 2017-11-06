@@ -7,8 +7,6 @@
 
 <link href="../index.css" rel="stylesheet" type="text/css"/>
 
-
-
 <div id="header"> 
     <div id="topmenu">
     <a href="../index.php">Home</a>
@@ -55,7 +53,7 @@
                     ?>
                     <tr>
                         <td>
-                            <img src="<?php echo $value['image']; ?>" width="100px" height="90px" align="center" right="500px">
+                            <img src="../Afbeeldingen/<?php echo $value['image']; ?>" width="100px" height="90px" align="center" right="500px">
                         </td>
                         <td>
                             <?php echo $value['description']; ?>
@@ -77,9 +75,6 @@
         </div>
     </div>
 
-
-
-
 <div id="right_sidebar">
     <h3> Openingstijden </h3>
     <p><b>Maandag:</b>15:00 - 00:00 </p>
@@ -91,27 +86,9 @@
     <p><b>Zondag:</b>15:00 - 02:00 </p>
 </div>
 
-
 <div id="footer"> 	
 <p>Copyright &copy; <?php echo date("Y"); ?> Kom Essen</p> 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

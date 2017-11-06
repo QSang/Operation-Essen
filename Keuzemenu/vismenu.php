@@ -33,8 +33,7 @@ $assortment['vissenvleugels'] = array('name' => "vissenvleugels", 'description' 
                     </form>
                 </td>
                 </tr>
-
-                <?php
+            <?php
             }
             ?>
         </table>

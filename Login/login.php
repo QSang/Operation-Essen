@@ -71,8 +71,6 @@
             </table>
     </section>
 
-
-
     <?php//registreren:?>
     <section id = "registreren">
         <b>Don't have an account yet?<br>please register:</b>
@@ -105,8 +103,6 @@
     </section>
 </div>
 
-
-
 <div id="right_sidebar">
     <h3> Openingstijden </h3>
     <p><b>Maandag:</b>15:00 - 00:00 </p>
@@ -122,12 +118,5 @@
 <div id="footer"> 	
 <p>Copyright &copy; <?php echo date("Y"); ?> Kom Essen</p> 
 </div>
-
-
-
-
-
-
-
 </body>
 </html>

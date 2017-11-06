@@ -1,8 +1,6 @@
 <?php
 $chosenMenu = $_POST['chosenMenu'];
 
-//change to switch statement
-
 switch ($chosenMenu) {
   case 'kip':
     include 'kipmenu.php';
@@ -17,7 +15,6 @@ switch ($chosenMenu) {
      break;
 
    default:
-
-}   
+  }   
 ?>
 
