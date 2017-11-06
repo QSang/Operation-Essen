@@ -12,7 +12,7 @@
         <a href="#">Bestellen</a>
         <a href="faq.php">FAQ</a>
         <a href="contact.php">Contact</a>
-        <a href="login2.php">Inloggen</a>
+        <a href="login.php">Inloggen</a>
 </div>
 <span class="first tittle"><h3>Kom Essen!</h3></span>
 
