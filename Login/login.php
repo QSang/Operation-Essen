@@ -17,7 +17,7 @@
         <a href="contact.php">Contact</a>
         <a href="login2.php">Inloggen</a>
 </div>
-<span class="first_tittle"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
+<span class="first_title"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
 
 <div id="left_sidebar">
 <div id="menu">
