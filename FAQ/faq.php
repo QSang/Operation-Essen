@@ -3,27 +3,27 @@
 
 
 <title> Kom Essen </title>
-<link href="../index.css" rel="stylesheet" type="text/css"/>
+<link href="theme.css" rel="stylesheet" type="text/css"/>
 
 
 <div id="header"> 
     <div id="topmenu">
         <a href="index.php">Home</a>
-        <a href="./Keuzemenu/keuzemenu.php">Bestellen</a>
-        <a href="./FAQ/faq.php">FAQ</a>
-        <a href="./Contact/contact.php">Contact</a>
-        <a href="./Login/login.php">Inloggen</a>
-    </div>
-<span class="first_title"><h3>Kom Essen!</h3></span>
+        <a href="keuzemenu.php">Bestellen</a>
+        <a href="faq.php">FAQ</a>
+        <a href="contact.php">Contact</a>
+        <a href="login2.php">Inloggen</a>
+</div>
+<span class="first_tittle"><h3>Kom Essen!</h3></span>
 
 <div id="left_sidebar">
 <div id="menu">
     <h3>Menu</h3>
     <a href="index.php">Home</a>
-        <a href="#">Bestellen</a>
+        <a href="keuzemenu.php">Bestellen</a>
         <a href="faq.php">FAQ</a>
         <a href="contact.php">Contact</a>
-        <a href="#">Inloggen</a>
+        <a href="login2.php">Inloggen</a>
 </div>
 
 <h3>Nieuws</h3>
