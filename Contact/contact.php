@@ -14,7 +14,7 @@
     <a href="../Contact/contact.php">Contact</a>
     <a href="../Login/login.php">Inloggen</a>
 </div>
-<span class="first tittle"><h3>Kom Essen!</h3></span>
+<span class="first title"><h3>Kom Essen!</h3></span>
 
 <div id="left_sidebar">
 <div id="menu">
