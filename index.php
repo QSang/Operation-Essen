@@ -5,9 +5,7 @@
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 
-<link href="theme.css" rel="stylesheet" type="text/css"/>
-
-
+<link href="index.css" rel="stylesheet" type="text/css"/>
 
 <div id="header"> 
     <div id="topmenu">
