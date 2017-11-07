@@ -40,16 +40,19 @@
     <a href="#">Home</a> &qt;
     <a href="#">Bestellen</a>
 </div>
+
+<h1>Burger King®</h1>
+
 <?php
 $assortment = array();
-$assortment['kippensoep'] = array('name' => "kippensoep", 'description' => "<h5>kippesoep met ui</h5>", 'price' => "€14.99");
-$assortment['kipsate'] = array('name' => "kipsate", 'description' => "<h5>kipsate met rijst</h5>", 'price' => "€14.99");
-$assortment['kipkerrie'] = array('name' => "kerriekiprijst", 'description' => "<h5>kip kerrie met rijst</h5>", 'price' => "€14.99");
-$assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' => "<h5>kippenvleugels met rijst</h5>", 'price' => "€14.99");
+$assortment['Bacon king'] = array('name' => "Bacon King", 'description' => "<h5>Echte Bacon Liefde. 100% flame-grilled beef, krokante bacon plakken, delicate-gesmolten kaas, mayonaise en ketchup.</h5>", 'price' => "€14.99");
+$assortment['Hamburger'] = array('name' => "Hamburger", 'description' => "<h5>Eerst was er de burger. Toen kwam de King. De Hamburger van Burger King® is “the real thing”: een Flame-Grilled Burger met augurken, ketchup en mosterd tussen een heerlijk versgeroosterd sesambroodje.</h5>", 'price' => "€14.99");
+$assortment['Whopper'] = array('name' => "Whopper", 'description' => "<h5>De WHOPPER® heeft eigenlijk geen uitleg nodig. Zodra je tanden in het versgeroosterde sesambroodje zinken en je de unieke BBQ-smaak van de Flame-Grilled burger proeft, snap je waarom de Whopper® onze concurrenten al sinds 1957 tot waanzin drijft. Het is de absolute Koning onder de burgers. Door velen gekopieerd maar nog nooit verbeterd.</h5>", 'price' => "€14.99");
+$assortment['Big King'] = array('name' => "Big King", 'description' => "<h5>De Big King maakt zijn royale titel meer dan waar. Tussen het versgeroosterde sesambroodje bevindt zich de Koninklijke kern van twee heerlijke stukken Flame-Grilled Beef, een dikke plak Cheddar Cheese, augurken, knapperige sla, uitjes en de onovertroffen King Sauce. Heerlijk!</h5>", 'price' => "€14.99");
 ?>
 <div class= "content-container">
-        <table border="2px" width="50%" align="center">
-            <?php
+    <table border="2px" width="50%" align="center">
+        <?php
             foreach ($assortment as $key => $value) {
                 ?>
                 <tr>
@@ -57,7 +60,7 @@ $assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' 
                         <?php echo $value['name']."<br/>". $value['description'] ?>
                     </td>
                 <td>
-                    <form action="menu.php" method="POST">
+                    <form action="addcart.php" method="POST">
                         <input type = "hidden" name="chosenMenu" value="<?php echo $value['value']; ?>">
                         <input type = "submit" value="<?php echo $value['price']; ?>">
                     </form>
@@ -66,7 +69,7 @@ $assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' 
 
                 <?php
             }
-            ?>
+        ?>
         </table>
         </div>
         </div>

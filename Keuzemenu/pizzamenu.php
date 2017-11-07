@@ -40,16 +40,19 @@
     <a href="#">Home</a> &qt;
     <a href="#">Bestellen</a>
 </div>
+
+<h1>Burger King®</h1>
+
 <?php
 $assortment = array();
-$assortment['kippensoep'] = array('name' => "kippensoep", 'description' => "<h5>kippesoep met ui</h5>", 'price' => "€14.99");
-$assortment['kipsate'] = array('name' => "kipsate", 'description' => "<h5>kipsate met rijst</h5>", 'price' => "€14.99");
-$assortment['kipkerrie'] = array('name' => "kerriekiprijst", 'description' => "<h5>kip kerrie met rijst</h5>", 'price' => "€14.99");
-$assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' => "<h5>kippenvleugels met rijst</h5>", 'price' => "€14.99");
+$assortment['Hot wings'] = array('name' => "Hot wings", 'description' => "<h5>Of je nou een bucket vol wilt, een paar in combinatie met een menu of in een boxed meal - Hot Wings zijn de perfect gekruide, krokante bite die altijd kan. Ben je klaar om te kluiven?</h5>", 'price' => "€14.99");
+$assortment['Filet Burger'] = array('name' => "Filet burger", 'description' => "<h5>Een vers gepaneerde hele kipfilet op een wit sesambroodje, met frisse ijsbergsla en onze overheerlijke Burgerdressing. Bij elke hap die je van dit broodje kip neemt, verheug je je al op de volgende hap.</h5>", 'price' => "€14.99");
+$assortment['B.O.S.S'] = array('name' => "B.O.S.S", 'description' => "<h5>Ga voor de B.O.S.S. en geniet van heerlijke Original Recipe Filet, Texan BBQ sauce, Pepermayonaise, vers gesnipperde uitjes, frisse ijsbergsla en als finishing touch de Monterey Jack Cheese.</h5>" , 'price' => "€14.99");
+$assortment['Crispy Burger'] = array('name' => "Crispy Burger", 'description' => "<h5>Een smaakvol tussendoortje: de Crispy Burger! Als je wilt doen we er kaas op, maar ook zonder is deze Crispy Strip op een klein wit sesambroodje super.</h5>", 'price' => "€14.99");
 ?>
 <div class= "content-container">
-        <table border="2px" width="50%" align="center">
-            <?php
+    <table border="2px" width="50%" align="center">
+        <?php
             foreach ($assortment as $key => $value) {
                 ?>
                 <tr>
@@ -57,7 +60,7 @@ $assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' 
                         <?php echo $value['name']."<br/>". $value['description'] ?>
                     </td>
                 <td>
-                    <form action="menu.php" method="POST">
+                    <form action="addcart.php" method="POST">
                         <input type = "hidden" name="chosenMenu" value="<?php echo $value['value']; ?>">
                         <input type = "submit" value="<?php echo $value['price']; ?>">
                     </form>
@@ -66,7 +69,7 @@ $assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' 
 
                 <?php
             }
-            ?>
+        ?>
         </table>
         </div>
         </div>

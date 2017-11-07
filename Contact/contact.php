@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
     else{
         echo "<p>Bedankt voor het invullen, wij zullen zo spoedig mogelijk reageren</p>";
-}
+    }
 }
 ?>
 
