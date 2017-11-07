@@ -10,22 +10,23 @@
 <div id="header"> 
     <div id="topmenu">
         <a href="index.php">Home</a>
-        <a href="keuzemenu.php">Bestellen</a>
-        <a href="faq.php">FAQ</a>
-        <a href="contact.php">Contact</a>
-        <a href="login2.php">Inloggen</a>
-</div>
-<span class="first_tittle"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
+        <a href="./Keuzemenu/keuzemenu.php">Bestellen</a>
+        <a href="./FAQ/faq.php">FAQ</a>
+        <a href="./Contact/contact.php">Contact</a>
+        <a href="./Login/login.php">Inloggen</a>
+    </div>
+
+<span class="first_title"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
 
 <div id="left_sidebar">
-<div id="menu">
-    <h3>Menu</h3>
-    <a href="index.php">Home</a>
-        <a href="keuzemenu.php">Bestellen</a>
-        <a href="faq.php">FAQ</a>
-        <a href="contact.php">Contact</a>
-        <a href="login2.php">Inloggen</a>
-</div>
+    <div id="menu">
+        <h3>Menu</h3>
+        <a href="index.php">Home</a>
+        <a href="./Keuzemenu/keuzemenu.php">Bestellen</a>
+        <a href="./FAQ/faq.php">FAQ</a>
+        <a href="./Contact/contact.php">Contact</a>
+        <a href="./Login/login.php">Inloggen</a>
+    </div>
 
 <h3>Nieuws</h3>
 <p>Kom Essen is dit jaar genomineerd voor de beste website voor het bestellen van eten! Stemmen dus!</p>
@@ -54,13 +55,13 @@
 
 
 <table>
-<tr><td><img src="burgerking.png" alt="plaatje1" height="160" width="240"></td>
-<td><img src="dominos.png" alt="plaatje2" height="160" width="240"></td>
-<td><img src="kfc.png" alt="plaatje3" height="160" width="240"></td><tr>
+<tr><td><img src="./Afbeeldingen/burgerking.png" alt="plaatje1" height="160" width="240"></td>
+<td><img src="./Afbeeldingen/dominos.png" alt="plaatje2" height="160" width="240"></td>
+<td><img src="./Afbeeldingen/kfc.png" alt="plaatje3" height="160" width="240"></td><tr>
 <tr><td>Burger King</td><td>Dominos Pizza</td><td>KFC</td></tr>
-<td><img src="mcdonalds.png" alt="plaatje4" height="160" width="240"></td>
-<td><img src="pizzahut.png" alt="plaatje5" height="160" width="240"></td>
-<td><img src="sahara.png" alt="plaatje6" height="160" width="240"></td></tr>
+<td><img src="./Afbeeldingen/mcdonalds.png" alt="plaatje4" height="160" width="240"></td>
+<td><img src="./Afbeeldingen/pizzahut.png" alt="plaatje5" height="160" width="240"></td>
+<td><img src="./Afbeeldingen/sahara.png" alt="plaatje6" height="160" width="240"></td></tr>
 <tr> <td>Mac Donalds</td><td>Pizza Hut</td><td>Sahara</td> </tr> </table> </div>
 
 
