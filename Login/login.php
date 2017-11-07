@@ -91,7 +91,7 @@
                                     <td><input type = "password" name = "passwordConfirms"></td>
                             </tr></br>
                             <tr>
-                                    <td>Confrim password:</td>
+                                    <td>Confirm password:</td>
                                     <td><input type = "password" name = "password"></td>
                             </tr></br>
                             <tr><td></td>

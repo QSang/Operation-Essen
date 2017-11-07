@@ -42,12 +42,12 @@
 </div>
 <?php
     $assortment = array();
-    $assortment['kip'] = array('name' => "Kip", 'value' => 'kip', 'image' => "kip-logo.jpg" , 'description' => "pok pok <br/> chicken", 'price' => "25 min delivery <br/> 4.95 delivery costs <br/> free delivery from 15.00 <br/> 4/5 rating in 214 reviews");
-    $assortment['vlees'] = array('name' => "Vlees", 'value' => 'vlees', 'image' => "vlees-logo.png" , 'description' => "kraa kraa <br/> all kinds of meat with vegetable", 'price' => "40 min delivery <br/> 4.95 delivery costs <br/> free delivery from 15.00 <br/> 4/5 rating in 158 reviews");
-    $assortment['vis'] = array('name' => "Vis", 'value' => 'vis', 'image' => "vis-logo.png" , 'description' => "lil'fishy <br/> fishmeals ", 'price' => "25 min delivery <br/> 3.99 delivery costs <br/> free delivery from 15.00 <br/> 5/5 rating in 45 reviews");
+    $assortment['Burgerking'] = array('name' => "Burger", 'value' => 'burger', 'image' => "burgerking.jpg" , 'description' => "<b>Burger king</b> <br/> Taste is king", 'price' => "Bezorging binnen 25 min  <br/> 4.95 verzendkosten <br/> gratis bezorging vanaf 15.00 <br/> 4/5 rating in 214 reviews");
+    $assortment['Dominos'] = array('name' => "Pizza", 'value' => 'pizza', 'image' => "dominos.png" , 'description' => "<b>Dominos</b> <br/> Man Hungry? ding-dong Pizza!", 'price' => "Bezorging binnen 20 min <br/> 4.95 verzendkosten <br/> gratis bezorging vanaf 15.00 <br/> 4/5 rating in 158 reviews");
+    $assortment['KFC'] = array('name' => "Kip", 'value' => 'kip', 'image' => "kfc.png" , 'description' => "<b>KFC</b> <br/> It's finger licking good! ", 'price' => "Bezorging binnen 25 min <br/> 3.99 verzendkosten <br/> gratis bezorging vanaf 15.00 <br/> 5/5 rating in 45 reviews");
 ?>
     <div class= "content-container">
-            <table border="2px" width="50%" align="center">
+            <table border="2px" width="70%" align="center">
                 <?php
                 foreach ($assortment as $key => $value) {
                     ?>
