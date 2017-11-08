@@ -1,16 +1,15 @@
 <?php
 $chosenMenu = $_POST['chosenMenu'];
-
 switch ($chosenMenu) {
-  case 'burger':
+  case 'Burger King':
     include 'burgermenu.php';
   break;
 
-  case 'pizza':
+  case 'Domino\'s':
     include 'pizzamenu.php';
   break;
 
-  case 'kip':
+  case 'KFC':
     include 'kipmenu.php';
      break;
 

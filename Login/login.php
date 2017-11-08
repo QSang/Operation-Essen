@@ -105,13 +105,13 @@
 
 <div id="right_sidebar">
     <h3> Openingstijden </h3>
-    <p><b>Maandag:</b>15:00 - 00:00 </p>
-    <p><b>Dinsdag:</b>15:00 - 00:00 </p>
-    <p><b>Woensdag:</b>15:00 - 00:00 </p>
-    <p><b>Donderdag:</b>15:00 - 00:00 </p>
-    <p><b>Vrijdag:</b>15:00 - 02:00 </p>
-    <p><b>Zaterdag:</b>15:00 - 02:00 </p>
-    <p><b>Zondag:</b>15:00 - 02:00 </p>
+    <p><b>Maandag:</b> 15:00 - 00:00 </p>
+    <p><b>Dinsdag:</b> 15:00 - 00:00 </p>
+    <p><b>Woensdag:</b> 15:00 - 00:00 </p>
+    <p><b>Donderdag:</b> 15:00 - 00:00 </p>
+    <p><b>Vrijdag:</b> 15:00 - 02:00 </p>
+    <p><b>Zaterdag:</b> 15:00 - 02:00 </p>
+    <p><b>Zondag:</b> 15:00 - 02:00 </p>
 </div>
 
 

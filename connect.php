@@ -11,5 +11,6 @@
         die("De verbinding met de database is mislukt: " .
             mysqli_connect_error() . " (" .
                 mysqli_connect_errno() . ")" ); 	
-        } 
+    }   
 ?>
+        

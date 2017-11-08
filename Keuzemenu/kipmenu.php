@@ -1,31 +1,18 @@
+<?php
+include('../connect.php');
+?>
+
 <html>
 <body>
-
 
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 
 <link href="../index.css" rel="stylesheet" type="text/css"/>
 
-<div id="header"> 
-    <div id="topmenu">
-    <a href="../index.php">Home</a>
-    <a href="../Keuzemenu/keuzemenu.php">Bestellen</a>
-    <a href="../FAQ/faq.php">FAQ</a>
-    <a href="../Contact/contact.php">Contact</a>
-    <a href="../Login/login.php">Inloggen</a>
-</div>
-<span class="first_title"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
-
-<div id="left_sidebar">
-<div id="menu">
-    <h3>Menu</h3>
-    <a href="../index.php">Home</a>
-    <a href="../Keuzemenu/keuzemenu.php">Bestellen</a>
-    <a href="../FAQ/faq.php">FAQ</a>
-    <a href="../Contact/contact.php">Contact</a>
-    <a href="../Login/login.php">Inloggen</a>
-</div>
+<?php
+include('../menu.html');
+?>
 
 <h3>Nieuws</h3>
 <p>Kom Essen is dit jaar genomineerd voor de beste website voor het bestellen van eten! Stemmen dus!</p>
@@ -40,25 +27,37 @@
     <a href="#">Home</a> &qt;
     <a href="#">Bestellen</a>
 </div>
+
+<h1>KFC®</h1>
+
 <?php
-$assortment = array();
-$assortment['kippensoep'] = array('name' => "kippensoep", 'description' => "<h5>kippesoep met ui</h5>", 'price' => "€14.99");
-$assortment['kipsate'] = array('name' => "kipsate", 'description' => "<h5>kipsate met rijst</h5>", 'price' => "€14.99");
-$assortment['kipkerrie'] = array('name' => "kerriekiprijst", 'description' => "<h5>kip kerrie met rijst</h5>", 'price' => "€14.99");
-$assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' => "<h5>kippenvleugels met rijst</h5>", 'price' => "€14.99");
+include('../connect.php');
+
+$getMenu = $db->prepare("SELECT fooditems_id, vendor_id, price, description, fooditem_name FROM fooditems WHERE vendor_id = 3");
+
+$getMenu->execute();
+
+$getMenu->bind_result($fooditems_id, $vendor_id, $price, $description, $fooditemname);
+
+while ($getMenu->fetch()) {
+	$assortment[$fooditems_id] = array('foodItemId' => $fooditems_id, 'vendorId' => $vendor_id, 'price' => $price, 'description' => $description, 'fooditemname' => $fooditemname);
+}
+
+$getMenu->close();
 ?>
+
 <div class= "content-container">
-        <table border="2px" width="50%" align="center">
-            <?php
+    <table border="2px" width="50%" align="center">
+        <?php
             foreach ($assortment as $key => $value) {
                 ?>
                 <tr>
                     <td>
-                        <?php echo $value['name']."<br/>". $value['description'] ?>
+                        <?php echo $value['fooditemname']."<br/>" . "<br/>". $value['description'] ?>
                     </td>
                 <td>
-                    <form action="menu.php" method="POST">
-                        <input type = "hidden" name="chosenMenu" value="<?php echo $value['value']; ?>">
+                    <form action="addCart.php" method="POST">
+                        <input type = "hidden" name="chosenMenu" value="<?php echo $value['price']; ?>">
                         <input type = "submit" value="<?php echo $value['price']; ?>">
                     </form>
                 </td>
@@ -66,19 +65,19 @@ $assortment['kippenvleugels'] = array('name' => "kippenvleugels", 'description' 
 
                 <?php
             }
-            ?>
+        ?>
         </table>
         </div>
         </div>
 <div id="right_sidebar">
     <h3> Openingstijden </h3>
-    <p><b>Maandag:</b>15:00 - 00:00 </p>
-    <p><b>Dinsdag:</b>15:00 - 00:00 </p>
-    <p><b>Woensdag:</b>15:00 - 00:00 </p>
-    <p><b>Donderdag:</b>15:00 - 00:00 </p>
-    <p><b>Vrijdag:</b>15:00 - 02:00 </p>
-    <p><b>Zaterdag:</b>15:00 - 02:00 </p>
-    <p><b>Zondag:</b>15:00 - 02:00 </p>
+    <p><b>Maandag:</b> 15:00 - 00:00 </p>
+    <p><b>Dinsdag:</b> 15:00 - 00:00 </p>
+    <p><b>Woensdag:</b> 15:00 - 00:00 </p>
+    <p><b>Donderdag:</b> 15:00 - 00:00 </p>
+    <p><b>Vrijdag:</b> 15:00 - 02:00 </p>
+    <p><b>Zaterdag:</b> 15:00 - 02:00 </p>
+    <p><b>Zondag:</b> 15:00 - 02:00 </p>
 </div>
 
 <div id="footer"> 	
