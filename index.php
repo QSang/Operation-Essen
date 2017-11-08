@@ -1,7 +1,6 @@
 <html>
 <body>
 
-
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 
@@ -36,25 +35,21 @@
 <p>Als je het hele jaar door van deze website gebruikt maakt, verdien je een gratis maaltijd naar keuze!</p>
 </div>
 
-
-
 <div id="content">
-<div id="breadcrumb">
-    <a href="#">Home</a> &qt;
-    <a href="#">Home</a>
-</div>
+    <div id="breadcrumb">
+        <a href="#">Home</a> &qt;
+        <a href="#">Home</a>
+    </div>
 <h2>Met Kom Essen krijg de klant snel en lekker eten geleverd!</h2>
-<div id="block">
-    
-    <p> De website "Kom Essen" is een website waarbij je eten kan bestellen.<p/>
-     De website is zo eenvoudig gebouwd, waardoor de klant in slechts een paar seconden kan bestellen. <p/>
-     Ook is de website het hele jaar bruikbaar zodat de klant op elk moment kan bestellen. <p/>
-     Toch ontevreden? Neem contact met ons op en dan zullen we even kijken wat we kunnen doen voor u. <p/>
-    <h2> Een overzicht van de populairste restaurants waarmee Kom Essen meesamenwerkt </h2>
-</div>
+    <div id="block">
+        <p> De website "Kom Essen" is een website waarbij je eten kan bestellen.<p/>
+        De website is zo eenvoudig gebouwd, waardoor de klant in slechts een paar seconden kan bestellen. <p/>
+        Ook is de website het hele jaar bruikbaar zodat de klant op elk moment kan bestellen. <p/>
+        Toch ontevreden? Neem contact met ons op en dan zullen we even kijken wat we kunnen doen voor u. <p/>
+        <h2> Een overzicht van de populairste restaurants waarmee Kom Essen meesamenwerkt </h2>
+    </div>
 
-
-<table>
+<table align="center" bordercolor="gray">
 <tr><td><img src="./Afbeeldingen/burgerking.png" alt="plaatje1" height="160" width="240"></td>
 <td><img src="./Afbeeldingen/dominos.png" alt="plaatje2" height="160" width="240"></td>
 <td><img src="./Afbeeldingen/kfc.png" alt="plaatje3" height="160" width="240"></td><tr>
@@ -64,29 +59,20 @@
 <td><img src="./Afbeeldingen/sahara.png" alt="plaatje6" height="160" width="240"></td></tr>
 <tr> <td>Mac Donalds</td><td>Pizza Hut</td><td>Sahara</td> </tr> </table> </div>
 
-
-
 <div id="right_sidebar">
     <h3> Openingstijden </h3>
-    <p><b>Maandag:</b>15:00 - 00:00 </p>
-    <p><b>Dinsdag:</b>15:00 - 00:00 </p>
-    <p><b>Woensdag:</b>15:00 - 00:00 </p>
-    <p><b>Donderdag:</b>15:00 - 00:00 </p>
-    <p><b>Vrijdag:</b>15:00 - 02:00 </p>
-    <p><b>Zaterdag:</b>15:00 - 02:00 </p>
-    <p><b>Zondag:</b>15:00 - 02:00 </p>
+    <p><b>Maandag:</b> 15:00 - 00:00 </p>
+    <p><b>Dinsdag:</b> 15:00 - 00:00 </p>
+    <p><b>Woensdag:</b> 15:00 - 00:00 </p>
+    <p><b>Donderdag:</b> 15:00 - 00:00 </p>
+    <p><b>Vrijdag:</b> 15:00 - 02:00 </p>
+    <p><b>Zaterdag:</b> 15:00 - 02:00 </p>
+    <p><b>Zondag:</b> 15:00 - 02:00 </p>
 </div>
-
 
 <div id="footer"> 	
 <p>Copyright &copy; <?php echo date("Y"); ?> Kom Essen</p> 
 </div>
-
-
-
-
-
-
 
 </body>
 </html>

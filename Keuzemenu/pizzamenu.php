@@ -28,12 +28,12 @@ include('../menu.html');
     <a href="#">Bestellen</a>
 </div>
 
-<h1>KFC®</h1>
+<h1>Domino's®</h1>
 
 <?php
 include('../connect.php');
 
-$getMenu = $db->prepare("SELECT fooditems_id, vendor_id, price, description, fooditem_name FROM fooditems WHERE vendor_id = 3");
+$getMenu = $db->prepare("SELECT fooditems_id, vendor_id, price, description, fooditem_name FROM fooditems WHERE vendor_id = 2");
 
 $getMenu->execute();
 

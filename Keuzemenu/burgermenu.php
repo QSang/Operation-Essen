@@ -28,12 +28,12 @@ include('../menu.html');
     <a href="#">Bestellen</a>
 </div>
 
-<h1>KFC®</h1>
+<h1>Burger King®</h1>
 
 <?php
 include('../connect.php');
 
-$getMenu = $db->prepare("SELECT fooditems_id, vendor_id, price, description, fooditem_name FROM fooditems WHERE vendor_id = 3");
+$getMenu = $db->prepare("SELECT fooditems_id, vendor_id, price, description, fooditem_name FROM fooditems WHERE vendor_id = 1");
 
 $getMenu->execute();
 
@@ -71,13 +71,13 @@ $getMenu->close();
         </div>
 <div id="right_sidebar">
     <h3> Openingstijden </h3>
-    <p><b>Maandag:</b> 15:00 - 00:00 </p>
-    <p><b>Dinsdag:</b> 15:00 - 00:00 </p>
-    <p><b>Woensdag:</b> 15:00 - 00:00 </p>
-    <p><b>Donderdag:</b> 15:00 - 00:00 </p>
-    <p><b>Vrijdag:</b> 15:00 - 02:00 </p>
-    <p><b>Zaterdag:</b> 15:00 - 02:00 </p>
-    <p><b>Zondag:</b> 15:00 - 02:00 </p>
+    <p><b>Maandag: </b> 15:00 - 00:00 </p>
+    <p><b>Dinsdag: </b> 15:00 - 00:00 </p>
+    <p><b>Woensdag: </b> 15:00 - 00:00 </p>
+    <p><b>Donderdag: </b> 15:00 - 00:00 </p>
+    <p><b>Vrijdag: </b> 15:00 - 02:00 </p>
+    <p><b>Zaterdag: </b> 15:00 - 02:00 </p>
+    <p><b>Zondag: </b> 15:00 - 02:00 </p>
 </div>
 
 <div id="footer"> 	
