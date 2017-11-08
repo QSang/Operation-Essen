@@ -1,7 +1,3 @@
-<?php
-include('../connect.php');
-?>
-
 <html>
 <body>
 

@@ -25,12 +25,15 @@ include('../menu.html');
 </div>
 
 <?php
+//Maak connectie met de database
 include('../connect.php');
 
+//Zoek naar de tabel en maak extra gegevens
 $checkName = $db->prepare("SELECT vendor_name, email, phone_number, city, adress, delivery_time, delivery_costs, image, description FROM vendors");
 $checkName->execute();
 $checkName->bind_result($vendor, $email, $phoneNumber, $city, $address, $del_time, $del_cost, $image, $description);
 
+//Checkt alle queries
 while ($checkName->fetch()) {
 	$assortment[$vendor] = array('name' => $vendor, 'email' => $email, 'phoneNumber' => $phoneNumber, 'city' => $city, 
 								'adress' => $address, 'del_time' => $del_time, 'del_cost' => $del_cost, 'image' => $image, 'description' => $description );
