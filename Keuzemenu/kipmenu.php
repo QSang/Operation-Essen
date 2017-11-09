@@ -7,7 +7,7 @@
 <link href="../index.css" rel="stylesheet" type="text/css"/>
 
 <?php
-include('../menu.html');
+include('../menu.php');
 ?>
 
 <h3>Nieuws</h3>
@@ -52,8 +52,10 @@ $getMenu->close();
                         <?php echo $value['fooditemname']."<br/>" . "<br/>". $value['description'] ?>
                     </td>
                 <td>
-                    <form action="addCart.php" method="POST">
-                        <input type = "hidden" name="chosenMenu" value="<?php echo $value['price']; ?>">
+                    <form action="../Winkelwagen/addCart.php" method="POST">
+                        <input type = "hidden" name="menu" value="kip">
+                        <input type = "hidden" name="fooditemsid" value="<?php echo $value['foodItemId']; ?>">
+                        <input type = "hidden" name="price" value="<?php echo $value['price']; ?>">
                         <input type = "submit" value="<?php echo $value['price']; ?>">
                     </form>
                 </td>

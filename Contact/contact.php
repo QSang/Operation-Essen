@@ -1,39 +1,25 @@
 <html>
 <body>
 
-
 <title> Kom Essen </title>
 <link href="../index.css" rel="stylesheet" type="text/css"/>
 
-
-<div id="header"> 
-    <div id="topmenu">
-    <a href="../index.php">Home</a>
-    <a href="../Keuzemenu/keuzemenu.php">Bestellen</a>
-    <a href="../FAQ/faq.php">FAQ</a>
-    <a href="../Contact/contact.php">Contact</a>
-    <a href="../Login/login.php">Inloggen</a>
-</div>
-<span class="first title"><h3>Kom Essen!</h3></span>
-
-<div id="left_sidebar">
-<div id="menu">
-    <h3>Menu</h3>
-    <a href="./index.php">Home</a>
-    <a href="../Keuzemenu/keuzemenu.php">Bestellen</a>
-    <a href="../FAQ/faq.php">FAQ</a>
-    <a href="../Contact/contact.php">Contact</a>
-    <a href="../Login/login.php">Inloggen</a>
-</div>
+<?php
+    include ('../menu.php');
+?>
 
 <h3>Nieuws</h3>
+
 <p>Kom Essen is dit jaar genomineerd voor de beste website voor het bestellen van eten! Stemmen dus!</p>
+
 <h3>Tijdelijke actie</h3>
+
 <p>Bestel eten voor 1 december 2017 en verdien een korting van 20% op het totale betaalbedrag</p>
+
 <h3>Gratis eten?</h3>
+
 <p>Als je het hele jaar door van deze website gebruikt maakt, verdien je een gratis maaltijd naar keuze!</p>
 </div>
-
 
 <div id="content">
 <div id="breadcrumb">
@@ -44,13 +30,12 @@
 <h2> Contact </h2>
 <p> Telefoonnummer: 0643520531</p>
 
-
-
 <?php
 
 $onderwerpErr = $naamErr = $telefoonErr = $emailErr = $textareaErr= "";
 $onderwerp = $naam = $telefoon = $email = $textarea= "";
 
+//Regels voor het invullen van enquete
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($_POST["onderwerp"])){
         $onderwerpErr = "Onderwerp is verplicht";
@@ -91,7 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
 <p>*Verplichte velden</p> 
 <p>Onderwerp:</p>
@@ -131,9 +115,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $textarea = test_input($_POST['melding']);
 }
 
-
-
-
 ?>
 
 <div id="right_sidebar">
@@ -147,12 +128,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p><b>Zondag:</b> 15:00 - 02:00 </p>
 </div>
 
-
 <div id="footer"> 	
 <p>Copyright &copy; <?php echo date("Y"); ?> Kom Essen</p> 
 </div>
-
-
 
  </body>
  </html>

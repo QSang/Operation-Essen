@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <html>
 <body>
 
@@ -5,10 +6,10 @@
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 
-<link href="../index.css" rel="stylesheet" type="text/css"/>
+<link href="index.css" rel="stylesheet" type="text/css"/>
 
 <?php
-include('../menu.php');
+ include ('../menu.php');
 ?>
 
 <h3>Nieuws</h3>
@@ -31,20 +32,32 @@ include('../menu.php');
   <section id = "blankDiv"></section>
 
   <center>
-  <section id = "forgottenPassword">
-      <b> wachtwoord vergeten?<br>vul hier uw email adress in:</b><br>
-      <?php//inlog gegevens invoeren?>
-          <table>
-          <form method = "POST" action = "updatePassword.php">
-                          <tr>
-                                  <td>Email:</td>
-                                  <td><input type = "text" name = "username"></td>
-                          </tr></br>
-                          <tr><td></td>
-                              <td><input type = "submit" value = "Herstel wachtwoord"></td>
-                          <tr>
-          </form>
-          </table>
+  <section id = "verwerken1">
+    <?php
+    include('../connect.php');
+    $name = mysqli_real_escape_string($db, $_POST['username']);
+    $password = mysqli_real_escape_string($db, $_POST['password']);
+
+    $selectUser = "SELECT username, passcode from accounts_komessen WHERE username = '$name';";
+    $result = mysqli_query($db, $selectUser);
+    $userResult = mysqli_fetch_assoc($result);
+
+    if ($userResult) {
+        if  ($name == $userResult['username'] && $password == $userResult['passcode']) {
+            // Inloggen succesvol
+
+            $_SESSION['username'] = $name;
+            echo "U bent ingelogd<br>";
+            echo("<a href='contactgegevens.php'>Bekijk mijn contactgegevens</a>");
+        } else {
+            // Wachtwoord verkeerd, mogelijk wil je heir redirecten terug naar inlog pagina of iets dergelijks.
+            echo "Username en wachtwoord combinatie verkeerd";
+        }
+    } else {
+        echo "Username onbekend";
+    }
+
+    ?>
   </section>
 </center>
 </div>

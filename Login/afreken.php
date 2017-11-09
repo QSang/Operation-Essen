@@ -29,9 +29,8 @@ include ('../menu.php');
     <section id = "blankDiv"></section>
 
     <center>
-    <section id = "updateForgotten">
-        <font size="3"><br><b>We hebben u een mail gestuurd
-        met een link<br>om uw wachtwoord opnieuw in te stellen.</b></font><br>
+    <section id = "bestelafreken">
+        <font size="3"><br><b>Uw bestelling is afgerekend!</b></font><br>
         </section>
     </center>
     </div>
