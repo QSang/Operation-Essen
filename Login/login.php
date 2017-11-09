@@ -17,6 +17,7 @@
 <a href="../FAQ/faq.php">FAQ</a>
 <a href="../Contact/contact.php">Contact</a>
 <a href="../Login/login.php">Inloggen</a>
+<a href="contactgegevens.php">Contactgegevens</a>
 </div>
 <span class="first_title"><h3>Kom Essen, Lekker en snel geleverd!</h3></span>
 
@@ -28,6 +29,7 @@
     <a href="../FAQ/faq.php">FAQ</a>
     <a href="../Contact/contact.php">Contact</a>
     <a href="../Login/login.php">Inloggen</a>
+    <a href="../Login/contactgegevens.php">Contactgegevens</a>
 </div>
 
 <h3>Nieuws</h3>
