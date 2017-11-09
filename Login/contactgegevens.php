@@ -5,10 +5,10 @@
 <title>Kom Essen  </title>
 <title> Lekker en snel geleverd </title>
 
-<link href="../index.css" rel="stylesheet" type="text/css"/>
+<link href="index.css" rel="stylesheet" type="text/css"/>
 
 <?php
-include('../menu.html');
+include('../menu.php');
 ?>
 
 <h3>Nieuws</h3>
@@ -47,7 +47,11 @@ $checkName->close();
 ?>
 
 <div class= "content-container">
+<<<<<<< HEAD
 <h1> Contactgevens van de klanten </h1>
+=======
+<h1> Contactgegevens van de klanten </h1>
+>>>>>>> master
 <table border="2px" width="70%" align="center">
     <?php
     foreach ($assortment as $key => $value) {
@@ -62,7 +66,11 @@ $checkName->close();
                 <?php echo "Gebruikersnaam = ".$value['username'] . "<br/>" . "Wachtwoord = ".$value['passcode'] . "<br/>" . "Telefoonnummer = ". $value['phone_number']. "<br/>" . "Emailadres = ". $value['email_adress'] . "<br/>" . "Joindate =  " . $value['join_date'] . "<br/>" . "Stad= " . $value['city'];  ?>
             </td>
             <td>
+<<<<<<< HEAD
              <?php echo ("<td> <a href=\"updateklant2.php"."\"> Wijzig</a></td>");?>
+=======
+             <?php echo ("<td> <a href=\"updateklant.php"."\"> Wijzig</a></td>");?>
+>>>>>>> master
 
             </td>
         </tr>

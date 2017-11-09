@@ -7,7 +7,7 @@
 <link href="../index.css" rel="stylesheet" type="text/css"/>
 
 <?php
-include('../menu.html');
+include('../menu.php');
 ?>
 
 <h3>Nieuws</h3>
@@ -25,22 +25,25 @@ include('../menu.html');
 </div>
 
 <?php
+//Maak connectie met de database
 include('../connect.php');
 
+//Zoek naar de tabel en maak extra gegevens
 $checkName = $db->prepare("SELECT vendor_name, email, phone_number, city, adress, delivery_time, delivery_costs, image, description FROM vendors");
 $checkName->execute();
 $checkName->bind_result($vendor, $email, $phoneNumber, $city, $address, $del_time, $del_cost, $image, $description);
 
+//Checkt alle queries
 while ($checkName->fetch()) {
 	$assortment[$vendor] = array('name' => $vendor, 'email' => $email, 'phoneNumber' => $phoneNumber, 'city' => $city, 
 								'adress' => $address, 'del_time' => $del_time, 'del_cost' => $del_cost, 'image' => $image, 'description' => $description );
-}
-
+} 
 $checkName->close();
 ?>
 <div class= "content-container">
         <table border="2px" width="70%" align="center">
             <?php
+            //Gaat elke assortment bij langs en laat het ook zien
             foreach ($assortment as $key => $value) {
                 ?>
                 <tr>
@@ -48,7 +51,7 @@ $checkName->close();
                         <img src="../Afbeeldingen/<?php echo $value['image']; ?>" width="100px" height="90px" align="center" right="500px">
                     </td>
                     <td>
-                        <?php  echo  $value['name']?>
+                        <?php echo $value['name']?>
                     </td>
                     <td>
                         <?php echo $value['description'];?>
